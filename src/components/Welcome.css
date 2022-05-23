@@ -1,0 +1,157 @@
+.welcome-container {
+  height: 100vh;
+  background-color: white;
+  z-index: 0;
+  margin: 0;
+}
+
+/* #DBFE87, #FFE381, #CEC288, #6F8695, #1C448E */
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 84rem;
+  border-bottom: 1px solid #d3d3d3;
+
+  height: 8%;
+  width: 100%;
+}
+
+.headerTwo {
+  font-size: 3.2rem;
+  color: #222;
+  font-family: "Raleway", sans-serif;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.list-anchor {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #b0b0b0;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  background: none;
+  border: none;
+}
+
+.list-anchor:hover {
+  color: #333;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.call {
+  padding: 1rem;
+  border-radius: 30px;
+  color: white;
+  font-weight: 500;
+  background-color: #1c448e;
+}
+
+.call:hover {
+  background-color: #cec288;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-container {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  gap: 15rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.about {
+  max-width: 60rem;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.headerOne {
+  font-size: 5.6rem;
+  color: #222;
+}
+
+.search-container {
+  display: grid;
+  grid-template-columns: 5fr 1fr 1.5fr;
+  border: 1px solid #666;
+  width: 100%;
+  border-radius: 11px;
+  -webkit-box-shadow: -5px 7px 24px -1px rgba(0, 0, 0, 0.23);
+  box-shadow: -5px 7px 24px -1px rgba(0, 0, 0, 0.23);
+}
+
+.search {
+  height: 6rem;
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+  border: none;
+  font-size: 1.6rem;
+  padding-left: 0.6rem;
+  color: #555;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.zip {
+  padding-left: 0.6rem;
+  font-size: 1.6rem;
+  color: #555;
+  border-left: 1px solid #666;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.zip:focus {
+  outline: none;
+}
+
+.search-btn {
+  font-size: 1.6rem;
+  border: none;
+  color: white;
+  font-weight: 600;
+  background-color: #1c448e;
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: black;
+  background-color: #cec288;
+}
+
+.hero-img {
+  height: 40rem;
+  width: 60rem;
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

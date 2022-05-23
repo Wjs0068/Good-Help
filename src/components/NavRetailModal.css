@@ -1,0 +1,49 @@
+.modal-container {
+  position: relative;
+
+  background-color: white;
+  width: 100%;
+
+  z-index: 10;
+}
+
+.grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: left;
+  align-items: flex-start;
+  justify-content: center;
+  width: 60%;
+  gap: 0.4rem;
+  margin: auto;
+}
+
+.headerFour {
+  font-size: 2.2rem;
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 1rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.services-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.para {
+  font-size: 1.8rem;
+  color: #444;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.para:last-child {
+  padding-bottom: 1rem;
+}
