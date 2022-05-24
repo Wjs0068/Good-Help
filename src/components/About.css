@@ -1,0 +1,36 @@
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 16rem;
+  align-items: center;
+  justify-items: center;
+  row-gap: 3rem;
+  column-gap: 0;
+
+  justify-content: center;
+}
+
+.details-container {
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 60rem;
+}
+
+.headerThree {
+  font-family: "Raleway", sans-serif;
+  font-size: 3.6rem;
+  color: #333;
+}
+
+.words {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #666;
+}
+
+.about-img {
+  height: 40rem;
+  width: 60rem;
+}
