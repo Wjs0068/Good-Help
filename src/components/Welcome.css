@@ -1,3 +1,25 @@
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
 .welcome-container {
   height: 100vh;
   /* background-color: white; */
@@ -16,7 +38,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  top: 4%;
+  top: 3.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   gap: 84rem;
@@ -30,8 +52,16 @@
 
 .headerTwo {
   font-size: 3.2rem;
+  font-weight: 600;
   color: #222;
   font-family: "Raleway", sans-serif;
+}
+
+.no {
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .list {
@@ -160,4 +190,18 @@
 .arrow {
   font-size: 3rem;
   color: white;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.arrow:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }

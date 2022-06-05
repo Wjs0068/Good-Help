@@ -34,7 +34,9 @@ function Welcome() {
     <div className="landing-container">
       <div className="welcome-container">
         <div className="nav-container">
-          <h2 className="headerTwo">Christian Help</h2>
+          <a href="/" className="headerTwo no">
+            Christian Help
+          </a>
           <nav>
             <ul className="list">
               <li>
