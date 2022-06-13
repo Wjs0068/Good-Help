@@ -38,9 +38,7 @@
   align-items: center;
   justify-content: space-evenly;
   position: fixed;
-  top: 3.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
   gap: 84rem;
   border-bottom: 1px solid #d3d3d3;
   z-index: 10;
