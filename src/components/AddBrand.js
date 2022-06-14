@@ -6,6 +6,7 @@ import Stack from "@mui/material/Stack";
 
 function AddBrand() {
   const type = [{ label: "Retail" }, { label: "Service" }];
+  const [value, setValue] = useState({});
 
   const serviceOptions = [
     { title: "Home", option: "Movers" },
@@ -36,12 +37,16 @@ function AddBrand() {
         <Autocomplete
           disablePortal
           id="combo-box-demo"
+          onChange={(event, value) => {
+            console.log(value);
+          }}
           options={type}
           sx={{ width: 500 }}
           renderInput={(params) => (
             <TextField {...params} label="Type of Business" />
           )}
         />
+
         <Autocomplete
           multiple
           id="tags-outlined"
