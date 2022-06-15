@@ -38,7 +38,7 @@ function AddBrand() {
           disablePortal
           id="combo-box-demo"
           onChange={(event, value) => {
-            console.log(value);
+            setValue(value.label);
           }}
           options={type}
           sx={{ width: 500 }}
@@ -50,7 +50,7 @@ function AddBrand() {
         <Autocomplete
           multiple
           id="tags-outlined"
-          options={serviceOptions}
+          options={value === "Service" ? serviceOptions : retailOptions}
           getOptionLabel={(option) => option.option}
           groupBy={(serviceOptions) => serviceOptions.title}
           sx={{ width: 500 }}
@@ -62,6 +62,11 @@ function AddBrand() {
               placeholder="Favorites"
             />
           )}
+        />
+        <TextField
+          id="outlined-basic"
+          label="Business Name"
+          variant="outlined"
         />
       </Stack>
     </form>
