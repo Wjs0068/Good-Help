@@ -2,6 +2,7 @@ import "./App.css";
 import Welcome from "./components/Welcome";
 import { Routes, Route } from "react-router-dom";
 import AddBrand from "./components/AddBrand";
+import AboutSection from "./components/AboutSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route exact path="/addBrand" element={<AddBrand />} />
+        <Route exact path="/About" element={<AboutSection />} />
       </Routes>
     </div>
   );
