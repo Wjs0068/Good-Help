@@ -5,3 +5,7 @@
   justify-content: center;
   height: 100vh;
 }
+
+.input {
+  color: red;
+}

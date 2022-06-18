@@ -33,15 +33,15 @@ function AddBrand() {
 
   return (
     <form className="brand-form">
-      <Stack spacing={3} sx={{ width: 500 }}>
+      <Stack spacing={3} sx={{ width: 500, fontSizeAdjust: "2rem" }}>
         <Autocomplete
           disablePortal
-          id="combo-box-demo"
+          size="medium"
+          className="input"
           onChange={(event, value) => {
             setValue(value.label);
           }}
           options={type}
-          sx={{ width: 500 }}
           renderInput={(params) => (
             <TextField {...params} label="Type of Business" />
           )}
@@ -53,7 +53,6 @@ function AddBrand() {
           options={value === "Service" ? serviceOptions : retailOptions}
           getOptionLabel={(option) => option.option}
           groupBy={(serviceOptions) => serviceOptions.title}
-          sx={{ width: 500 }}
           filterSelectedOptions
           renderInput={(params) => (
             <TextField

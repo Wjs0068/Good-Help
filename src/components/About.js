@@ -34,8 +34,7 @@ function About() {
       <div className="details-container">
         <h3 className="headerThree">Add a service</h3>
         <p className="words">
-          If you are a believer and excel in a certain service, add your
-          service.
+          If you are a believer and excel in a certain trade, add your business.
         </p>
         <a href="/addBrand" className="list-anchor call">
           Add Your Brand
