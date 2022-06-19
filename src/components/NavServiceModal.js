@@ -107,6 +107,54 @@ function NavServiceModal() {
             Tax and Accounting
           </button>
         </div>
+        <div className="services-container">
+          <h4 className="headerFour">Technology</h4>
+          <button
+            value="Web Design"
+            className="para"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Graphic Design
+          </button>
+          <button
+            value="Web Development"
+            className="para"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Web Development
+          </button>
+
+          <button
+            className="para"
+            value="Computer Repair"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Hardware Repair
+          </button>
+          <h4 className="headerFour">Wellness and Personal Grooming</h4>
+          <button
+            value="Hair Stylist"
+            className="para"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Hair Stylist
+          </button>
+          <button
+            value=""
+            className="para"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Web Development
+          </button>
+
+          <button
+            className="para"
+            value="Computer Repair"
+            onClick={(e) => clickedButton(e, "value")}
+          >
+            Hardware Repair
+          </button>
+        </div>
       </div>
     </div>
   );
